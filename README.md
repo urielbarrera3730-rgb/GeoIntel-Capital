@@ -1,0 +1,2 @@
+# GeoIntel-Capital
+proyecto inicial
