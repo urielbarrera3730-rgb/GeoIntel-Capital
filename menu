@@ -1,0 +1,21 @@
+import tkinter as tk
+from tkinter import messagebox
+
+def boton_presionado():
+    messagebox.showinfo("Mensaje", "¡Has presionado el botón!")
+
+# Crear ventana principal
+ventana = tk.Tk()
+ventana.title("Mi Primera Interfaz")
+ventana.geometry("300x200")
+
+# Etiqueta
+etiqueta = tk.Label(ventana, text="¡Hola, Uriel! Esta es tu interfaz :)")
+etiqueta.pack(pady=10)
+
+# Botón
+boton = tk.Button(ventana, text="Presióname", command=boton_presionado)
+boton.pack(pady=20)
+
+# Iniciar la interfaz
+ventana.mainloop()
